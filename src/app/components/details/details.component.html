@@ -1,0 +1,45 @@
+<div class="details">
+
+  <div class="header-details">
+    <h2 class="title-details">Detalhes do pedido</h2>
+    <button (click)="goToEdit()"><i class="bi bi-pencil-square"></i> Editar</button>
+  </div>
+
+  <div class="client-details">
+    <div class="names">
+      <img src="./user-icon.png" alt="" class="picture">
+      <p class="company-name">{{ selectedCompany.empresa.ds_nome_fantasia }}</p>
+    </div>
+    <div class="infos">
+      <p>
+        <strong>Responsável:</strong> {{ selectedCompany.solicitante.ds_responsavel }}
+      </p>
+      <p>
+        <strong>CPF:</strong> {{ formattedCPF }}
+      </p>
+      <p>
+        <strong>Data de Nascimento:</strong> {{ formattedDate }}
+      </p>
+      <p>
+        <strong>Endereço:</strong> {{ selectedCompany.empresa.endereco.ds_logradouro }}
+      </p>
+      <p>
+        <strong>Bairro:</strong> {{ selectedCompany.empresa.endereco.ds_bairro }}
+      </p>
+      <p>
+        <strong>Cidade:</strong> {{ selectedCompany.empresa.endereco.ds_municipio }}
+      </p>
+      <p>
+        <strong>CEP:</strong> {{ selectedCompany.empresa.endereco.co_cep }}
+      </p>
+      <p>
+        <strong>Complemento:</strong> {{ selectedCompany.empresa.endereco.ds_complemento }}
+      </p>
+      <p>
+        <strong>UF:</strong> {{ selectedCompany.empresa.endereco.co_uf }}
+      </p>
+      <p>
+        <strong>Numero:</strong> {{ selectedCompany.empresa.endereco.co_numero }}
+      </p>
+    </div>
+  </div>

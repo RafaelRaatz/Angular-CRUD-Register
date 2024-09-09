@@ -1,0 +1,13 @@
+<Header [title]="'Pedidos de Abertura de empresa'"></Header>
+
+<main class="main">
+  <Box class="request-list">
+    <Box *ngFor="let company of companies">
+      <app-card [company]="company" (detailsRequested)="showDetails($event)"></app-card>
+    </Box>
+  </Box>
+
+  <Box class="request-details">
+    <app-details [selectedCompany]="selectedCompany" (close)="closeDetails()" *ngIf="selectedCompany"></app-details>
+  </Box>
+</main>

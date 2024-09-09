@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="header-container">
+    <div class="header-left">
+      <img src="./logo.png" alt="Logo" class="logo" />
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="header-right">
+      <button *ngIf="showButton" class="header-button" routerLink="/register">
+        <i class="bi bi-plus-circle-fill"></i>
+        Solicitar Abertura</button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="picture-container">
+    <img src="./user-icon.png" alt="" class="picture">
+  </div>
+  <div class="client-infos">
+    <h2>{{ company.empresa.ds_nome_fantasia }}</h2>
+    <p><strong>Responsável:</strong> {{ company.solicitante.ds_responsavel }}</p>
+  </div>
+  <div class="card-button">
+    <app-button (click)="showDetails(company)" label="Visualizar"></app-button>
+  </div>
+</div>

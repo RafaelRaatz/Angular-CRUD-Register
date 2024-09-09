@@ -1,0 +1,72 @@
+.details {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+
+  .header-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      height: 40px;
+      width: 120px;
+      background-color: #4c5a66;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .title-details {
+      font-weight: bold;
+      color: #708090;
+    }
+
+    .edit-button-details {
+      width: 100px;
+      height: 40px;
+      color: white;
+      background-color: #708090;
+      border: none;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+
+  .client-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .names {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .picture {
+        width: 70px;
+        height: 70px;
+        background-color: #c5cddc;
+        border-radius: 100%;
+      }
+
+      .company-name {
+        font-weight: bold;
+      }
+    }
+
+    .infos {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}

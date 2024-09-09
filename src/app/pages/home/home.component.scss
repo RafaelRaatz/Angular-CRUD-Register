@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  width: 1280px;
+  margin: auto;
+  margin-bottom: 50px;
+
+  .request-list {
+    width: 750px;
+    height: 500px;
+    border-right: 2px solid grey;
+  }
+}

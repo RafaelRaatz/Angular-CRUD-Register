@@ -1,0 +1,160 @@
+<main class="main-register">
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="client-company">
+      <section formGroupName="solicitante" class="client-info">
+        <h3>Dados do solicitante</h3>
+        <div class="form-item">
+          <label for="name">Responsável pela empresa</label>
+          <input id="name" type="text" formControlName="ds_responsavel" />
+          <div *ngIf="
+          form.get('solicitante.ds_responsavel')?.invalid &&
+          form.get('solicitante.ds_responsavel')?.touched
+        ">
+            <small>Campo obrigatório</small>
+          </div>
+        </div>
+
+        <div class="form-item">
+          <label for="cpf">CPF</label>
+          <input id="cpf" type="text" formControlName="nu_cpf" />
+          <div *ngIf="
+          form.get('solicitante.nu_cpf')?.invalid &&
+          form.get('solicitante.nu_cpf')?.touched
+        ">
+            <small>CPF inválido ou obrigatório</small>
+          </div>
+        </div>
+
+        <div class="form-item">
+          <label for="birthdate">Data de Nascimento</label>
+          <input id="birthdate" type="date" formControlName="date_nascimento" />
+          <div *ngIf="
+          form.get('solicitante.date_nascimento')?.invalid &&
+          form.get('solicitante.date_nascimento')?.touched
+        ">
+            <small>Campo obrigatório</small>
+          </div>
+        </div>
+      </section>
+
+      <section formGroupName="empresa">
+        <h3>Dados do Solicitante</h3>
+        <div class="form-item">
+          <label for="fantasyName">Nome Fantasia</label>
+          <input id="fantasyName" type="text" formControlName="ds_nome_fantasia" />
+          <div *ngIf="
+          form.get('ds_nome_fantasia')?.invalid &&
+          form.get('ds_nome_fantasia')?.touched
+        ">
+            <small>Campo obrigatório</small>
+          </div>
+        </div>
+
+        <div class="form-radio">
+          <label>Entidade de Registro</label>
+          <div class="form-item-radio">
+            <label *ngFor="let registerEntity of registerEntities"><input type="radio"
+                formControlName="co_entidade_registro" [value]="registerEntity.key" />
+              {{ registerEntity.value }}</label>
+          </div>
+          <div *ngIf="
+          form.get('co_entidade_registro')?.invalid &&
+          form.get('co_entidade_registro')?.touched
+        ">
+            <small>Escolha uma opção</small>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="separate-line">
+      <div class="fine-line"></div>
+    </div>
+
+    <div class="adress-info">
+
+      <div formGroupName="endereco">
+        <h3>Endereço da empresa</h3>
+        <div class="form-item">
+          <label for="cep">CEP</label>
+          <input id="cep" type="text" formControlName="co_cep" />
+          <div *ngIf="
+          form.get('address.co_cep')?.invalid &&
+          form.get('address.co_cep')?.touched
+        ">
+            <small>CEP inválido ou obrigatório</small>
+          </div>
+        </div>
+        <div class="form-item">
+          <label for="street">Endereço</label>
+          <input id="street" type="text" formControlName="ds_logradouro" />
+          <small *ngIf="
+          form.get('address.ds_logradouro')?.invalid &&
+          form.get('address.ds_logradouro')?.touched
+        ">Campo obrigatório</small>
+        </div>
+
+        <div class="form-item">
+          <label for="neighborhood">Bairro</label>
+          <input id="neighborhood" type="text" formControlName="ds_bairro" />
+          <small *ngIf="
+          form.get('address.ds_bairro')?.invalid &&
+          form.get('address.ds_bairro')?.touched
+        ">Campo obrigatório</small>
+        </div>
+
+        <div class="form-item">
+          <label for="number">Número</label>
+          <input id="number" type="text" formControlName="co_numero" />
+          <small *ngIf="
+          form.get('address.co_numero')?.invalid &&
+          form.get('address.co_numero')?.touched
+        ">Campo obrigatório</small>
+        </div>
+
+        <div class="form-item">
+          <label for="complement">Complemento</label>
+          <input id="complement" type="text" formControlName="ds_complemento" />
+          <small *ngIf="
+          form.get('address.ds_complemento')?.invalid &&
+          form.get('address.ds_complemento')?.touched
+        ">Campo obrigatório</small>
+        </div>
+
+        <div class="form-item">
+          <label for="city">Cidade</label>
+          <input id="city" type="text" formControlName="ds_municipio" />
+          <small *ngIf="
+          form.get('address.ds_municipio')?.invalid &&
+          form.get('address.ds_municipio')?.touched
+        ">Campo obrigatório</small>
+        </div>
+
+        <div class="form-item">
+          <label for="uf">Estado</label>
+          <select id="uf" formControlName="co_uf" class="select-form">
+            <option value="" disabled selected>Selecione</option>
+
+            <option *ngFor="let state of states" [value]="state.sigla">
+              {{ state.nome }}
+            </option>
+          </select>
+          <small *ngIf="
+          form.get('address.co_uf')?.invalid &&
+          form.get('address.co_uf')?.touched
+        ">Campo obrigatório</small>
+        </div>
+      </div>
+      <div class="button">
+        <button type="submit"><i class="bi bi-send-fill"></i>Enviar</button>
+      </div>
+    </div>
+  </form>
+
+</main>
+
+
+<app-modal *ngIf="showModal"></app-modal>

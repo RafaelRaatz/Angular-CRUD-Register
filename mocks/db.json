@@ -1,0 +1,110 @@
+{
+  "empresas": [
+    {
+      "empresa": {
+        "ds_nome_fantasia": "Diogo e Marcelo Filmagens Ltda ",
+        "co_entidade_registro": 104306,
+        "endereco": {
+          "co_cep": 14022094,
+          "ds_logradouro": "Rua Alcino Jacinto Ramos",
+          "ds_bairro": "Quinta da Primavera",
+          "ds_complemento": "123",
+          "ds_municipio": "Ribeirão Preto",
+          "co_uf": "RO",
+          "co_numero": "233"
+        }
+      },
+      "solicitante": {
+        "ds_responsavel": "Catarina Ester da Cruz ",
+        "nu_cpf": "83812080176",
+        "date_nascimento": "1984-04-20"
+      },
+      "id": "1"
+    },
+    {
+      "empresa": {
+        "ds_nome_fantasia": "Isabela e Benício Transportes Ltda",
+        "co_entidade_registro": 104308,
+        "endereco": {
+          "co_cep": 14022094,
+          "ds_logradouro": "Rua Francisco Nunes Villela",
+          "ds_bairro": "Vila dos Comerciários I",
+          "ds_complemento": "Apt 304",
+          "ds_municipio": "Ribeirão Preto",
+          "co_uf": "RO",
+          "co_numero": "233"
+        }
+      },
+      "solicitante": {
+        "ds_responsavel": "Ryan Vinicius Nicolas Almeida ",
+        "nu_cpf": "02494725976",
+        "date_nascimento": "1990-09-30"
+      },
+      "id": "2"
+    },
+    {
+      "empresa": {
+        "ds_nome_fantasia": "Vox Tecnologia",
+        "co_entidade_registro": 104308,
+        "endereco": {
+          "co_cep": "01010000",
+          "ds_logradouro": "vila dos comerciantes",
+          "ds_bairro": "Francisco nunes vilela",
+          "ds_complemento": " Edifício One 110",
+          "ds_municipio": "São Paulo",
+          "co_uf": "SP",
+          "co_numero": "21"
+        }
+      },
+      "solicitante": {
+        "ds_responsavel": "Vinicius Ryan Almeida Nicolas",
+        "nu_cpf": "12345678998",
+        "date_nascimento": "2001-05-02"
+      },
+      "id": "629f"
+    },
+    {
+      "id": "4aa3",
+      "empresa": {
+        "ds_nome_fantasia": "Nova Empresa",
+        "co_entidade_registro": 104309,
+        "endereco": {
+          "co_cep": "06850521",
+          "ds_logradouro": "rua novo endereço",
+          "ds_bairro": "bairro novo",
+          "ds_complemento": "casa",
+          "ds_municipio": "Itapecerica da Serra",
+          "co_uf": "SP",
+          "co_numero": "20"
+        }
+      },
+      "solicitante": {
+        "ds_responsavel": "Rafael Raatz",
+        "nu_cpf": "11123456789",
+        "date_nascimento": "1999-12-05"
+      }
+    }
+  ],
+  "entidade-registro": [
+    {
+      "key": 104305,
+      "value": "Cartório",
+      "id": "fdfc"
+    },
+    {
+      "key": 104306,
+      "value": "Junta Comercial",
+      "id": "e955"
+    },
+    {
+      "key": 104308,
+      "value": "OAB",
+      "id": "ce16"
+    },
+    {
+      "key": 104309,
+      "value": "RFB",
+      "id": "4321"
+    }
+  ]
+}
