@@ -28,7 +28,7 @@ Projeto vai ser rodado na porta 4200
 
 ## Detalhes
 
-Concluí as funcionalidades exigidas. Agora, é possível criar novas solicitações, visualizá-las em detalhes e editá-las.
+Concluí as funcionalidades exigidas. é possível criar novas solicitações, visualizá-las em detalhes e editá-las.
 
 Podia melhorar:
 
