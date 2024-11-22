@@ -95,7 +95,6 @@ export class FormComponent implements OnInit {
 
   onSubmit(): void {
     if (this.form.valid) {
-      console.log('Formulário enviado com sucesso', this.form.value);
 
       this.showModal = true;
 
