@@ -1,4 +1,4 @@
-# Anuglar Register
+# Angular Register
 
 Este projeto é uma pagina de registro de jogadores desenvolvido com Angular.
 A estilização foi feita com sass.
